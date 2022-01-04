@@ -73,25 +73,13 @@
 	background:#eee;
 }
 
-
-/*========= レイアウトのためのCSS ===============*/
-
-
-
-
-#container{
-	position: relative;
-	z-index:1;
-	background:#eee;
-	padding:600px 0;
-	text-align: center;
-}
-
-@media screen and (max-width:768px){
-
-    #header,
-    #header:before{
-	height: 90vh;    
-    }
+@media (max-width: 640px) {
     
+    /*スクロールダウン全体の場所*/
+    .scrolldown2{
+        /*描画位置※位置は適宜調整してください*/
+	    position:absolute;
+	    bottom:0px;
+	    left:1%;
+    }
 }
