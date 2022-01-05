@@ -3,11 +3,13 @@
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
 		if (windowwidth > 768){
 			var responsiveImage = [//PC用の画像
-				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_01.jpg'}
+				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_01.jpg' },
+				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_02.jpg' }
 			];
 		} else {
 			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
-				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_01.jpg' }
+				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_01.jpg' },
+				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_02.jpg' }
 			];
 		}
 
@@ -20,6 +22,5 @@ $('#slider').vegas({
 		delay: 10000,//スライド間の遅延をミリ秒単位で。
 		animationDuration: 20000,//スライドアニメーション時間をミリ秒単位で設定
 		animation: 'kenburns',//スライドアニメーションの種類。http://vegas.jaysalvat.com/documentation/transitions/参照。kenburns、kenburnsUp、kenburnsDown、kenburnsRight、kenburnsLeft、kenburnsUpLeft、kenburnsUpRight、kenburnsDownLeft、kenburnsDownRight、randomが設定可能。
-		slides: responsiveImage,//画像設定を読む
-		loop:false
+		slides: responsiveImage//画像設定を読む
 	});
