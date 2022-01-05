@@ -3,11 +3,11 @@
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
 		if (windowwidth > 768){
 			var responsiveImage = [//PC用の画像
-				{ src: 'https://sheep0363.github.io/KobeRokkoCss/2090014_l2.jpg'}
+				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_01.jpg'}
 			];
 		} else {
 			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
-				{ src: 'https://sheep0363.github.io/KobeRokkoCss/2090014_l2.jpg' }
+				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_01.jpg' }
 			];
 		}
 
