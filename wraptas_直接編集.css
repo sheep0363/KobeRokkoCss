@@ -74,7 +74,7 @@
 
 /* ‚¨–â‚¢‡‚í‚¹ƒŠƒ“ƒN‚ÌƒŒƒCƒAƒEƒg */
 .header__btn:last-child {
-    /*font-family: ForkAwesome,geneo-std,yu-mincho-pr6n,"ƒqƒ‰ƒMƒm–¾’© Pro W3","Hiragino Mincho Pro","Ÿà–¾’©‘Ì",YuMincho,"Yu Mincho","‚l‚r ‚o–¾’©","MS PMincho",serif;*/
+    font-family: ForkAwesome, Koburina Gothic W3 JIS2004, 'YuGothic', 'ŸàƒSƒVƒbƒN', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic ProN', 'ƒƒCƒŠƒI', 'Meiryo', sans-serif;
     background-color: #0083a8;
     border-radius: 30px;
     border: none;
