@@ -1,13 +1,23 @@
 /*ƒtƒHƒ“ƒgw’è ‘S”Ê*/
 .lang-ja {
     /*font-family: "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN","Hiragino Sans", Meiryo, sans-serif;*/
-    font-family: geneo-std,yu-mincho-pr6n,"ƒqƒ‰ƒMƒm–¾’© Pro W3","Hiragino Mincho Pro","Ÿà–¾’©‘Ì",YuMincho,"Yu Mincho","‚l‚r ‚o–¾’©","MS PMincho",serif;
+    font: 15px Koburina Gothic W3 JIS2004, 'YuGothic', 'ŸàƒSƒVƒbƒN', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic ProN', 'ƒƒCƒŠƒI', 'Meiryo', sans-serif;
+    font-weight: 500;
+    font-feature-settings: "palt";
+    line-height: 2.133;
+    letter-spacing: .08em;
+    *font-size: small;
+    *font: x-small;
+    color: #111;
+    -webkit-font-smoothing: antialiased;
+
 }
 /*ƒtƒHƒ“ƒgw’è */
 .notion-simple-table
 /*#block-093cd923e50c4d51bc4408537bca3ed8 Œo—ğ*/
 {
-    font-family: YuGothic, 'ŸàƒSƒVƒbƒN', 'Hiragino Kaku Gothic Pro', 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'ƒƒCƒŠƒI', 'Meiryo', 'Osaka', '‚l‚r ‚oƒSƒVƒbƒN', sans-serif;
+
+
 }
 
 /*ƒwƒbƒ_[ƒ^ƒCƒgƒ‹*/
@@ -64,7 +74,7 @@
 
 /* ‚¨–â‚¢‡‚í‚¹ƒŠƒ“ƒN‚ÌƒŒƒCƒAƒEƒg */
 .header__btn:last-child {
-    font-family: ForkAwesome,geneo-std,yu-mincho-pr6n,"ƒqƒ‰ƒMƒm–¾’© Pro W3","Hiragino Mincho Pro","Ÿà–¾’©‘Ì",YuMincho,"Yu Mincho","‚l‚r ‚o–¾’©","MS PMincho",serif;
+    /*font-family: ForkAwesome,geneo-std,yu-mincho-pr6n,"ƒqƒ‰ƒMƒm–¾’© Pro W3","Hiragino Mincho Pro","Ÿà–¾’©‘Ì",YuMincho,"Yu Mincho","‚l‚r ‚o–¾’©","MS PMincho",serif;*/
     background-color: #0083a8;
     border-radius: 30px;
     border: none;
