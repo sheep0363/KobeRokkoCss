@@ -20,19 +20,23 @@
     margin-left: 1em;
     margin-right: 1em;
 }
+.header__btn:first-child {
+    margin-right: 1em;
+}
 
 .page-_top #section-first {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0);
 }
+
 .page-_top .coverImage, .page-_top #section-first {
     height: 100vh;
-    max-height: 110%;
+    max-height: 100%;
     box-sizing: border-box;
     color: #ffffff;
 }
 .page-_top #section-first h1 {
     font-size: 3em;
-    
+
 }
 
 /*シンプルテーブルヘッダ*/
