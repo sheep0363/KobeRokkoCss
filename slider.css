@@ -2,8 +2,6 @@
 
 /*スクロールダウン全体の場所*/
 #slider {
-    position:absolute;
-	bottom:0px;
-    height: 100vh;
     width: 100%;
+    height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
 }
