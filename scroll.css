@@ -9,7 +9,7 @@
     /*描画位置※位置は適宜調整してください*/
 	position:absolute;
 	bottom:10px;
-	left:50%;
+	left:20%;
 }
 
 /*Scrollテキストの描写*/
@@ -78,5 +78,6 @@
     /*スクロールダウン全体の場所*/
     .scrolldown2{
 	    bottom:25vh;
+	    left:1%;
     }
 }

@@ -17,7 +17,11 @@
 /*#block-093cd923e50c4d51bc4408537bca3ed8 経歴*/
 {
 
+}
 
+/*セクション区切りパディング*/
+.footer__contentsWrapper, .separatedSection {
+    padding: 0;
 }
 
 /*ヘッダータイトル*/
@@ -98,19 +102,7 @@
   margin-right: 8px;
 }
 
-/*
-.page a[href="tel:05058801437"]:hover
-{
-  opacity: 0.75 !important;
-  text-decoration: none;
-}
-.page a[href="tel:05058801437"]
-{
-  color: var(--text-color) !important;
-  background-color: #fff;
-  border: solid 2px var(--text-color);
-}
-*/
+
 
 /*フッターリンク*/
 .footer {
@@ -136,7 +128,7 @@
     }
     /*タイトル文字*/
     .page-_top #section-first h1 {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }  
     /* Kobe-Rokko Labor and Social Security Attorney Office */
     #block-363b03c3b3914032b5be1f7f0bc930ab {
