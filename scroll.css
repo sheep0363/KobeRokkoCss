@@ -26,6 +26,7 @@
 	-ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
+    word-break: normal;
 }
 
 /* 丸の描写 */
@@ -77,7 +78,7 @@
     
     /*スクロールダウン全体の場所*/
     .scrolldown2{
-	    bottom:25vh;
+	    top:75vh;
 	    left:1%;
     }
 }
