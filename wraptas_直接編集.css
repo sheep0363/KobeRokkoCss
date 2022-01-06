@@ -19,11 +19,6 @@
 
 }
 
-/*セクション区切りパディング*/
-.footer__contentsWrapper, .separatedSection {
-    padding: 0;
-}
-
 /*ヘッダータイトル*/
 .header__link {
     font-weight:normal;
@@ -50,7 +45,10 @@
 }
 .page-_top #section-first h1 {
     font-size: 3em;
-
+    z-index: 2;
+}
+.page-_top #section-first .notion-text {
+    z-index: 2;
 }
 
 /*シンプルテーブルヘッダ*/
