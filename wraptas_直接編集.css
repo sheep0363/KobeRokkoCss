@@ -1,7 +1,252 @@
+/*****************************************/
+/* 基本テーマ                            */
+/*****************************************/
+:root {
+    --content-width: 1024px;
+    --decoration-color: #323434;
+    --theme-color: #0083a8;
+    --theme-color2: #f6f3ef;    
+    --section-bg-color: #ffffff;
+    --page-link-width: 250px;
+}
+
+.dark-mode {
+    --section-bg-color: #484848;
+    --decoration-color: #ffffff;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.titleSection {
+    display: none;
+}
+
+.page-_top .contents {
+    padding-top: 0 !important;
+}
+
+.page-_top .coverImage,
+.page-_top #section-first {
+    height: 60vh;
+    max-height: 500px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+@media (max-width: 640px) {
+    .page-_top .coverImage,
+    .page-_top #section-first {
+        height: 100vh;
+    }
+}
+
+.page-_top .coverImage {
+    position: absolute;
+}
+
+.page-_top .titleSection {
+    display: none;
+}
+
+.page-_top #section-first {
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2em;
+}
+
+.page-_top #section-first h1 {
+    font-size: 2em;
+}
+
+.page-_top #section-first .separatedSection__contentsWrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__contentsWrapper,
+.separatedSection,
+.contentsFooterSection {
+    padding: 3rem 0;
+}
+
+.contentsFooterSection {
+    padding: 1rem 0;
+}
+
+.shareBtns {
+    margin-top: 0;
+}
+
+.footer,
+.separatedSection:nth-child(even) {
+    background-color: var(--section-bg-color);
+}
+
+.separatedSection:nth-child(even) .notion-table,
+.separatedSection:nth-child(even) .notion-board {
+    --bg-color: var(--section-bg-color);
+}
+
+.titleSection__contentsWrapper,
+.footer__contentsWrapper,
+.separatedSection__contentsWrapper,
+.contentsFooterSection__contentsWrapper {
+    margin: auto;
+    padding: 0 1rem;
+    max-width: var(--content-width);
+}
+
+.footer {
+    padding: 2em 0;
+    margin-top: 0;
+}
+
+.footer .notion-asset-wrapper-image {
+    width: 200px !important;
+    min-width: 200px;
+}
+
+.notion-table {
+    background-color: inherit;
+    background-image: inherit;
+}
+
+.notion-page-link:not(.notion-list-item) {
+    display: block;
+    font-size: 16px;
+    margin: 1em auto 0;
+    max-width: var(--page-link-width);
+    box-sizing: border-box;
+    height: auto;
+    text-align: center;
+    padding: 1em;
+    border-radius: 100px;
+    background-color: var(--theme-color);
+    opacity: 1;
+}
+
+.notion-page-link + .notion-page-link {
+    padding-top: 1em;
+}
+
+.notion-page-link:not(.notion-list-item):hover {
+    background-color: var(--theme-color);
+    opacity: 0.8;
+}
+
+.notion-page-link:not(.notion-list-item) .notion-page-icon-default,
+.notion-page-link:not(.notion-list-item) .notion-page-title-addicon {
+    display: none;
+}
+
+.notion-page-link:not(.notion-list-item) .notion-page-title-text {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: none;
+    white-space: pre-wrap;
+}
+
+.notion-h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 0 0 1em;
+    position: relative;
+    background-color:var(--theme-color2);
+}
+
+.notion-h2::before,
+.notion-h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+    height: 5px;
+}
+
+/*
+.notion-h2::before {
+    top: 0;
+    border-top: solid 2px var(--decoration-color);
+    border-bottom: solid 1px var(--decoration-color);
+}
+
+.notion-h2::after {
+    bottom: 0;
+    border-top: solid 1px var(--decoration-color);
+    border-bottom: solid 2px var(--decoration-color);
+}
+*/
+
+.notion-h2 .notion-blue {
+    display: block;
+    font-size: 0.7em;
+    color: var(--theme-color);
+}
+
+.notion-h3 {
+    font-size: 1.4em;
+    border-bottom: 2px solid var(--decoration-color);
+    padding: 0.5em;
+    margin: 0 0 1em;
+}
+
+.notion-simple-table {
+    font-size: 1.0em;
+}
+
+.notion-simple-table-table {
+    width: 100%;
+}
+
+.notion-simple-table[data-columnheader="true"]
+.notion-simple-table-row:first-child
+td {
+    font-weight: bold;
+    background-color: var(--theme-color2);
+}
+
+.notion-simple-table[data-rowheader="true"]
+.notion-simple-table-column:first-child {
+    font-weight: bold;
+    background-color: unset;
+
+}
+
+.notion-simple-table-table,
+.notion-simple-table-column {
+    border-right: none;
+    border-left: none;
+}
+
+.notion-asset-wrapper img {
+    border-radius: 8px;
+}
+
+summary {
+    font-size: 1.2em;
+    border-bottom: 2px solid var(--text-color);
+}
+
+details > div {
+    padding-top: 0.5em;
+}
+
+
+/*****************************************/
+/* 追加テーマ                            */
+/*****************************************/
+
 /*フォント指定 全般*/
 .lang-ja {
     /*font-family: "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN","Hiragino Sans", Meiryo, sans-serif;*/
-    font: 16px 'Koburina Gothic W3 JIS2004', 'YuGothic', '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', sans-serif;
+    font: 16px 'ZEN角ゴシックN R', 'Koburina Gothic W3 JIS2004', 'YuGothic', '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', sans-serif;
     font-weight: 500;
     font-feature-settings: "palt";
     line-height: 2.133;
@@ -12,12 +257,6 @@
     -webkit-font-smoothing: antialiased;
 
 }
-/*フォント指定 */
-.notion-simple-table
-/*#block-093cd923e50c4d51bc4408537bca3ed8 経歴*/
-{
-
-}
 
 /*ヘッダー画像*/
 .header__img {
@@ -26,7 +265,7 @@
 /*ヘッダータイトル*/
 .header__link {
     font-weight:normal;
-    color: #0083a8;
+    color: var(--theme-color);
 }
 /*ヘッダメニュー*/
 .header__btn:not(:first-child) {
@@ -51,22 +290,39 @@
     font-size: 3em;
     font-family: 'ZEN角ゴシックN R';
     z-index: 2;
+    text-align: center;
 }
 .page-_top #section-first .notion-text {
     font-family: 'ZEN角ゴシックN R';    
     z-index: 2;
 }
 
-/*シンプルテーブルヘッダ*/
-.notion-simple-table[data-columnheader="true"] .notion-simple-table-row:first-child td {
-    font-weight:unset;
+.page-_top #section-first h1:before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 6px;
+    top: 6px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2ef14aca-4542-4b53-a1ad-dd2d0218a44c%2Fcheck-circle_1.svg?table=block&id=c7529cca-e16d-4ac9-9fe9-d1712fdcc34f&cache=v2&userId=37ed4c62-1fa5-4eab-a0cf-dcf09f5fb596&width=23);
 }
-.notion-simple-table[data-rowheader="true"] .notion-simple-table-column:first-child {
-    font-weight:unset;
+/* Kobe-Rokko Labor and Social Security Attorney Office */
+#block-cf36061f15fc43ffbbd3cd959c6041ac {
+    font-size: 0.9rem;
+    text-align: center;
+}
+/* タイトルキャッチフレーズ*/
+#block-cf31681370b74364ae0867ddac0fce71,
+#block-4fb46415ff89419286e0ef61a54bd3a3
+{
+    text-align: center;
 }
 
 /*ご挨拶*/
-#block-74663c3662fd49a38402200996135aea {
+#block-e0395abadcf1484ca1929fb9249b20e0 {
     white-space: pre-wrap;
     word-break: break-word;
     line-height: 2.5;
@@ -78,6 +334,7 @@
 /*テキスト太字*/
 .notion b {
     font-weight: bold;
+    color: var(--theme-color);
 }
 
 .notion-callout {
@@ -86,8 +343,8 @@
 
 /* お問い合わせリンクのレイアウト */
 .header__btn:last-child {
-    font-family: ForkAwesome, Koburina Gothic W3 JIS2004, 'YuGothic', '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', sans-serif;
-    background-color: #0083a8;
+    font-family: ForkAwesome, 'ZEN角ゴシックN R', 'Koburina Gothic W3 JIS2004', 'YuGothic', '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', sans-serif;
+    background-color: var(--theme-color);
     border-radius: 30px;
     border: none;
     color: #fff;
@@ -114,18 +371,22 @@
 
 /*フッターリンク*/
 .footer {
-    color: #fff;
-    background-color: #0083a8;
+    background-color: var(--theme-color2);
 }
 .footer .notion-link {
     font-weight: bold;
     border-bottom: none;
-    color: #fff;
     opacity: 1.0;
     /*color: var(--text-color);*/
 }
 .footer .notion-link:hover {
     opacity: 0.7;
+}
+
+/*Copyright*/    
+#block-3243273281ca4507939f54b3e35cde57{
+    font-size: 0.8rem;  
+    text-align: right;
 }
 
 @media (max-width: 640px) {
@@ -134,26 +395,31 @@
         font-size: 1.2em;
         font-weight:normal;
     }
+    .notion-simple-table {
+        font-size: 0.9em;
+    }
+    .notion-callout {
+        padding: 16px 16px 16px 0px;
+    }
     /*タイトル文字*/
     .page-_top #section-first h1 {
         font-size: 1.1em;
     }  
     /* Kobe-Rokko Labor and Social Security Attorney Office */
-    #block-363b03c3b3914032b5be1f7f0bc930ab {
+    #block-cf36061f15fc43ffbbd3cd959c6041ac {
         font-size: 0.8rem;
     }
     /* タイトルキャッチフレーズ*/
-    #block-3cb981df19484c9d991d278d1cae5106,
-    #block-e41ab9ca6ef24caf8059947c2aee249c,
-    #block-367992102c3c420fb4aa8ef7572fe2ba,
-    #block-ae8dd299ff774613b43d751894df5a52
+    #block-cf31681370b74364ae0867ddac0fce71,
+    #block-4fb46415ff89419286e0ef61a54bd3a3
     {
         font-size: 0.9rem;
     }
     /*ご挨拶*/
-    #block-74663c3662fd49a38402200996135aea {
+    #block-e0395abadcf1484ca1929fb9249b20e0 {
         line-height: 2.0;
     }
+
 }
 
 
