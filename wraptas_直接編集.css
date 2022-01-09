@@ -262,11 +262,25 @@ details > div {
 .header__img {
     height: -webkit-fill-available;
 }
+
 /*ヘッダータイトル*/
 .header__link {
     font-weight:normal;
     color: var(--theme-color);
 }
+.header__link::before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    top: 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://sheep0363.github.io/KobeRokkoCss/title-logo.png);
+}
+
 /*ヘッダメニュー*/
 .header__btn:not(:first-child) {
     margin-left: 1em;
@@ -297,18 +311,6 @@ details > div {
     z-index: 2;
 }
 
-.page-_top #section-first h1:before {
-    position: relative;
-    content: "";
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    margin-right: 6px;
-    top: 6px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2ef14aca-4542-4b53-a1ad-dd2d0218a44c%2Fcheck-circle_1.svg?table=block&id=c7529cca-e16d-4ac9-9fe9-d1712fdcc34f&cache=v2&userId=37ed4c62-1fa5-4eab-a0cf-dcf09f5fb596&width=23);
-}
 /* Kobe-Rokko Labor and Social Security Attorney Office */
 #block-cf36061f15fc43ffbbd3cd959c6041ac {
     font-size: 0.9rem;
@@ -342,7 +344,9 @@ details > div {
 }
 
 /* お問い合わせリンクのレイアウト */
-.header__btn:last-child {
+.header__btn:last-child,
+#block-fe2046f99ca94f4b97e121d386cc5a8a
+{
     font-family: ForkAwesome, 'ZEN角ゴシックN R', 'Koburina Gothic W3 JIS2004', 'YuGothic', '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', sans-serif;
     background-color: var(--theme-color);
     border-radius: 30px;
@@ -358,13 +362,40 @@ details > div {
     opacity: 1;
     margin: 0 auto;    
 }
-.header__btn:last-child:hover {
-  opacity: 0.75;
+.header__btn:last-child:hover{
+    opacity: 0.75;
 }
-.header__btn:last-child:before {
-  content: "\f0e0";
-  font-size: 1.2em;
-  margin-right: 8px;
+.header__btn:last-child:before{
+    content: "\f0e0";
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+.notion-link {
+    border-bottom: none;  
+    opacity: 1.0;
+}
+.notion-link:hover {
+    opacity: 0.7;
+}
+
+/* お問い合わせ */
+#block-fe2046f99ca94f4b97e121d386cc5a8a{
+    background-color: var(--theme-color);
+    border-radius: 10px;
+    color: #fff;
+    height: 110px;
+    width: 320px;
+    margin: 0 auto;  
+    font-size: 1.5rem;  
+}
+#block-86f39e5d287a460d8bd7707aad300fb2,
+#block-3dfb6c0f184a480eba852fd368dc2fd8{
+    text-align: center;
+}
+#block-5b3547a09953442b8211eaa77a8ac2b5{
+    text-align: center;    
+    font-size: 2.0rem;  
+    line-height: 1;
 }
 
 
@@ -376,12 +407,9 @@ details > div {
 .footer .notion-link {
     font-weight: bold;
     border-bottom: none;
-    opacity: 1.0;
     /*color: var(--text-color);*/
 }
-.footer .notion-link:hover {
-    opacity: 0.7;
-}
+
 
 /*Copyright*/    
 #block-3243273281ca4507939f54b3e35cde57{
@@ -392,9 +420,31 @@ details > div {
 @media (max-width: 640px) {
     /*ヘッダータイトル*/
     .header__link {
-        font-size: 1.2em;
+        font-size: 1.0em;
         font-weight:normal;
     }
+    .header__link::before {
+        position: relative;
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right: 6px;
+        top: 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(https://sheep0363.github.io/KobeRokkoCss/title-logo.png);
+    }
+    .page-_top #section-first .separatedSection__contentsWrapper {
+        /*justify-content: normal;*/
+    }
+    .page-_top .coverImage, .page-_top #section-first {
+        height: 95vh;
+        max-height: 95%;
+        box-sizing: border-box;
+        color: #ffffff;
+    }
+    
     .notion-simple-table {
         font-size: 0.9em;
     }
@@ -407,9 +457,12 @@ details > div {
     }  
     /* Kobe-Rokko Labor and Social Security Attorney Office */
     #block-cf36061f15fc43ffbbd3cd959c6041ac {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     /* タイトルキャッチフレーズ*/
+    #block-cf31681370b74364ae0867ddac0fce71 {
+        /*padding-top: 10vh;*/
+    }
     #block-cf31681370b74364ae0867ddac0fce71,
     #block-4fb46415ff89419286e0ef61a54bd3a3
     {
@@ -418,6 +471,17 @@ details > div {
     /*ご挨拶*/
     #block-e0395abadcf1484ca1929fb9249b20e0 {
         line-height: 2.0;
+    }
+    /* お問い合わせ */
+    #block-fe2046f99ca94f4b97e121d386cc5a8a{
+        height: 80px;
+        width: 280px;
+    }
+
+    /*Copyright*/    
+    #block-3243273281ca4507939f54b3e35cde57{
+        font-size: 0.6rem;  
+        text-align: center;
     }
 
 }
