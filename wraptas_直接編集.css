@@ -8,7 +8,16 @@
     --theme-color2: #f6f3ef;    
     --section-bg-color: #ffffff;
     --page-link-width: 250px;
+    --header-height: 60px;
+    --header-height-sp: 45px;
+    --header-height-minus: -60px;
+    --header-height-sp-minus: -45px;
 }
+
+.page {
+  scroll-margin-top: var(--header-height);
+}
+
 
 .dark-mode {
     --section-bg-color: #484848;
@@ -272,8 +281,8 @@ details > div {
     position: relative;
     content: "";
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     margin-right: 6px;
     top: 0px;
     background-size: contain;
@@ -321,6 +330,7 @@ details > div {
 #block-4fb46415ff89419286e0ef61a54bd3a3
 {
     text-align: center;
+    font-size: 1.2rem;
 }
 
 /*ご挨拶*/
@@ -418,6 +428,9 @@ details > div {
 }
 
 @media (max-width: 640px) {
+    .page {
+        scroll-margin-top: var(--header-height-sp);
+    }
     /*ヘッダータイトル*/
     .header__link {
         font-size: 1.0em;
@@ -444,17 +457,17 @@ details > div {
         box-sizing: border-box;
         color: #ffffff;
     }
-    
     .notion-simple-table {
         font-size: 0.9em;
     }
     .notion-callout {
         padding: 16px 16px 16px 0px;
+        font-size: 0.9rem;  
     }
     /*タイトル文字*/
     .page-_top #section-first h1 {
         font-size: 1.1em;
-    }  
+    }
     /* Kobe-Rokko Labor and Social Security Attorney Office */
     #block-cf36061f15fc43ffbbd3cd959c6041ac {
         font-size: 0.6rem;
@@ -468,16 +481,15 @@ details > div {
     {
         font-size: 0.9rem;
     }
+    /*サービス内容のブランク行*/
+    #block-8d35128a19fd4f89a01f538981e2845c
+    {
+        display: none;
+    }
     /*ご挨拶*/
     #block-e0395abadcf1484ca1929fb9249b20e0 {
         line-height: 2.0;
     }
-    /* お問い合わせ */
-    #block-fe2046f99ca94f4b97e121d386cc5a8a{
-        height: 80px;
-        width: 280px;
-    }
-
     /*Copyright*/    
     #block-3243273281ca4507939f54b3e35cde57{
         font-size: 0.6rem;  
