@@ -178,21 +178,6 @@
     left: 0;
     height: 5px;
 }
-
-/*
-.notion-h2::before {
-    top: 0;
-    border-top: solid 2px var(--decoration-color);
-    border-bottom: solid 1px var(--decoration-color);
-}
-
-.notion-h2::after {
-    bottom: 0;
-    border-top: solid 1px var(--decoration-color);
-    border-bottom: solid 2px var(--decoration-color);
-}
-*/
-
 .notion-h2 .notion-blue {
     display: block;
     font-size: 0.7em;
@@ -332,6 +317,19 @@ details > div {
     text-align: center;
     font-size: 1.2rem;
 }
+/*概要見出し*/
+#block-e731110b92134b5ebff1179d70c086d7{
+    display: none;
+}
+/*概要文章*/
+#block-e733d028e523420eae9755a923a4d152,
+#block-615adb84d4eb4c53830593cbc0f056f8{
+    font-size: 1.2rem;
+}
+/*経歴名前*/
+#block-22445cab3a474fae95684acf022a87d6{
+    font-size: 1.3rem;
+}
 
 /*ご挨拶*/
 #block-e0395abadcf1484ca1929fb9249b20e0 {
@@ -437,16 +435,8 @@ details > div {
         font-weight:normal;
     }
     .header__link::before {
-        position: relative;
-        content: "";
-        display: inline-block;
         width: 30px;
         height: 30px;
-        margin-right: 6px;
-        top: 0px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(https://sheep0363.github.io/KobeRokkoCss/title-logo.png);
     }
     .page-_top #section-first .separatedSection__contentsWrapper {
         /*justify-content: normal;*/
@@ -481,10 +471,10 @@ details > div {
     {
         font-size: 0.9rem;
     }
-    /*サービス内容のブランク行*/
-    #block-8d35128a19fd4f89a01f538981e2845c
-    {
-        display: none;
+    /*概要文章*/
+    #block-e733d028e523420eae9755a923a4d152,
+    #block-615adb84d4eb4c53830593cbc0f056f8{
+        font-size: 1.1rem;
     }
     /*ご挨拶*/
     #block-e0395abadcf1484ca1929fb9249b20e0 {
