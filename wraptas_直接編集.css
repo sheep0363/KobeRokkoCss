@@ -481,6 +481,7 @@ details > div {
     }
     /*タイトル文字*/
     .page-_top #section-first h1 {
+        padding-top: 72px;
         font-size: 1.1em;
     }
     /* Kobe-Rokko Labor and Social Security Attorney Office */
@@ -512,7 +513,8 @@ details > div {
     }
     
     /*標準のテキストサイズ*/
-    .notion-text
+    .notion-text,
+    .notion-list
     {
         font-size: 0.9rem;
     }
