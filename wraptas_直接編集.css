@@ -324,10 +324,15 @@ details > div {
 #block-cc8231aa97524466aaaaee519e80a7dc{
     display: none;
 }
-/*概要文章*/
-#block-615adb84d4eb4c53830593cbc0f056f8{
-    font-size: 1.2rem;
+/*サービス名*/
+#block-30683fc2e09049dabea5bfd68dabc9dd,
+#block-4b029b0d92ea43bc80298488b43ec4d2,
+#block-b76340c768504a93870409d38c2740a1,
+#block-d49082ad37cd42f3bb6146634265a393,
+#block-51c26aaa7fa84e6796139259862aec92{
+    font-size: 1.3rem;
 }
+
 /*経歴名前*/
 #block-22445cab3a474fae95684acf022a87d6{
     font-size: 1.3rem;
@@ -408,8 +413,6 @@ details > div {
     line-height: 1;
 }
 
-
-
 /*フッターリンク*/
 .footer {
     background-color: var(--theme-color2);
@@ -420,11 +423,31 @@ details > div {
     /*color: var(--text-color);*/
 }
 
-
 /*Copyright*/    
 #block-3243273281ca4507939f54b3e35cde57{
     font-size: 0.8rem;  
     text-align: right;
+}
+
+/*箇条書きのアイコン*/
+#block-1377c74a7fc245019f9a3d86e34c4211:before,
+#block-5b3777c27b7244d38ea5d0aaffb00169:before,
+#block-3b1345df12914ea9a2cd423f81d5d21e:before,
+#block-2ffbadad65a443b0ba4f873c24bab3ba:before,
+#block-c5fc3dc4015b4fdc8ed6bbbee32d7d46:before,
+#block-edcb82347d494f849cc33c10de5a8cde:before,
+#block-1ad2db40d63041cdac84c850112d63be:before
+{
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    top: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://img.icons8.com/ios/250/000000/price-tag.png);
 }
 
 @media (max-width: 640px) {
@@ -465,9 +488,10 @@ details > div {
         font-size: 0.6rem;
     }
     /* タイトルキャッチフレーズ*/
-    #block-cf31681370b74364ae0867ddac0fce71 {
-        /*padding-top: 10vh;*/
+    #block-4fb46415ff89419286e0ef61a54bd3a3 {
+        padding-bottom: 30vh;
     }
+    
     #block-cf31681370b74364ae0867ddac0fce71,
     #block-4fb46415ff89419286e0ef61a54bd3a3,
     #block-198ddfc65a644f769b7c0592cc93f68e,
@@ -475,10 +499,8 @@ details > div {
     {
         font-size: 0.9rem;
     }
-    /*概要文章*/
-    #block-615adb84d4eb4c53830593cbc0f056f8{
-        font-size: 1.1rem;
-    }
+    
+    
     /*ご挨拶*/
     #block-e0395abadcf1484ca1929fb9249b20e0 {
         line-height: 2.0;
@@ -488,7 +510,18 @@ details > div {
         font-size: 0.6rem;  
         text-align: center;
     }
-
+    
+    /*標準のテキストサイズ*/
+    .notion-text
+    {
+        font-size: 0.9rem;
+    }
+    /*章見出しのテキストサイズ*/
+    .notion-h2
+    {
+        font-size: 1.8rem;
+    }
+    
 }
 
 
