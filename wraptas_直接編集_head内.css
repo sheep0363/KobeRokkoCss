@@ -1,4 +1,21 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-220097871-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-220097871-3');
+</script>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 
 <!-- ƒ‚ƒŠƒTƒWebƒtƒHƒ“ƒg -->
-<script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?61d941d07638469e9d587469ac1e02e5" charset="utf-8"></script>
+<script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?61d98d08bc044a5d8765746bac1e02e5" charset="utf-8"></script>
+
+<meta name="keywords" content="_ŒË,Œ³’¬,ŽO‹{,ŽÐ‰ï•ÛŒ¯˜J–±Žm,ŽÐ˜JŽm,Ž––±Š,˜J–±‘Š’k,A‹Æ‹K‘¥,•¬‹à,ŽÐ‰ï•ÛŒ¯,‹‹—^ŒvŽZ,lŽ–§“x,‘n‹ÆƒTƒ|[ƒg,‹N‹ÆƒTƒ|[ƒg">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css" rel="stylesheet" />
+<link href="https://sheep0363.github.io/KobeRokkoCss/slider.css" rel="stylesheet" />
+<link href="https://sheep0363.github.io/KobeRokkoCss/scroll.css" rel="stylesheet" />
+<link href="https://sheep0363.github.io/KobeRokkoCss/fadeup.css" rel="stylesheet" />

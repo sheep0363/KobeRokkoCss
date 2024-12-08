@@ -116,7 +116,7 @@
 }
 
 .footer .notion-asset-wrapper-image {
-    width: 200px !important;
+    width: 350px !important;
     min-width: 200px;
 }
 
@@ -167,6 +167,10 @@
     margin: 0 0 1em;
     position: relative;
     background-color:var(--theme-color2);
+    /*
+    color: #fff;
+    background-color:var(--theme-color);
+    */
 }
 
 .notion-h2::before,
@@ -223,9 +227,12 @@ td {
     border-radius: 8px;
 }
 
+/*QAトグル*/
 summary {
+    /*
     font-size: 1.2em;
     border-bottom: 2px solid var(--text-color);
+    */
 }
 
 details > div {
@@ -253,27 +260,19 @@ details > div {
 
 }
 
+.header {
+  background-color: var(--theme-color2);
+}
+
 /*ヘッダー画像*/
 .header__img {
-    height: -webkit-fill-available;
+    height: calc(-webkit-fill-available);
 }
 
 /*ヘッダータイトル*/
 .header__link {
     font-weight:normal;
     color: var(--theme-color);
-}
-.header__link::before {
-    position: relative;
-    content: "";
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    margin-right: 6px;
-    top: 0px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(https://sheep0363.github.io/KobeRokkoCss/title-logo.png);
 }
 
 /*ヘッダメニュー*/
@@ -324,14 +323,6 @@ details > div {
 #block-cc8231aa97524466aaaaee519e80a7dc{
     display: none;
 }
-/*サービス名*/
-#block-30683fc2e09049dabea5bfd68dabc9dd,
-#block-4b029b0d92ea43bc80298488b43ec4d2,
-#block-b76340c768504a93870409d38c2740a1,
-#block-d49082ad37cd42f3bb6146634265a393,
-#block-51c26aaa7fa84e6796139259862aec92{
-    font-size: 1.3rem;
-}
 
 /*経歴名前*/
 #block-22445cab3a474fae95684acf022a87d6{
@@ -352,6 +343,7 @@ details > div {
 .notion b {
     font-weight: bold;
     color: var(--theme-color);
+    font-size: 1.3rem;
 }
 
 .notion-callout {
@@ -359,29 +351,30 @@ details > div {
 }
 
 /* お問い合わせリンクのレイアウト */
-.header__btn:last-child,
+.header__btn,
 #block-fe2046f99ca94f4b97e121d386cc5a8a
 {
+    /*
     font-family: ForkAwesome, 'ZEN角ゴシックN R', 'Koburina Gothic W3 JIS2004', 'YuGothic', '游ゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', sans-serif;
     background-color: var(--theme-color);
-    border-radius: 30px;
+    border-radius: 20px;
     border: none;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 4px 32px;
-    width: 150px;
     box-sizing: border-box;
     font-weight: bold;
     opacity: 1;
-    margin: 0 auto;    
+    margin: 0 auto;  
+    */  
 }
 .header__btn:last-child:hover{
     opacity: 0.75;
 }
 .header__btn:last-child:before{
-    content: "\f0e0";
+    /* content: "\f0e0"; */
     font-size: 1.2em;
     margin-right: 8px;
 }
@@ -428,6 +421,97 @@ details > div {
     font-size: 0.8rem;  
     text-align: right;
 }
+
+/*ご契約の流れの番号：１*/
+#block-13209a0463f18090b828cf574cc38fae:before
+{
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    top: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://img.icons8.com/?size=100&id=116644&format=png&color=000000);
+}
+
+/*ご契約の流れの番号：２*/
+#block-13209a0463f1801ebf03e65d4e2d9422:before
+{
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    top: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://img.icons8.com/?size=100&id=116611&format=png&color=000000);
+}
+
+/*ご契約の流れの番号：３*/
+#block-13209a0463f18014aeede5e1d0554e78:before
+{
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    top: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://img.icons8.com/?size=100&id=116613&format=png&color=000000);
+}
+
+/*ご契約の流れの番号：４*/
+#block-13209a0463f180baacb8c810233eb549:before
+{
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    top: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://img.icons8.com/?size=100&id=116617&format=png&color=000000);
+}
+
+/*ご契約の流れの番号：５*/
+#block-13209a0463f180169623e2930df54b23:before
+{
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    top: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://img.icons8.com/?size=100&id=116619&format=png&color=000000);
+}
+
+/*ご契約の流れの番号：６*/
+#block-13209a0463f180c8b185c9a890778272:before
+{
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    top: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://img.icons8.com/?size=100&id=116625&format=png&color=000000);
+}
+
 
 /*箇条書きのアイコン*/
 #block-1377c74a7fc245019f9a3d86e34c4211:before,
