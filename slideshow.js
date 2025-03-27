@@ -8,8 +8,8 @@ var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0
 			];
 		} else {
 			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
-				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_01.jpg' },
-				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_02.jpg' }
+				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_01h.jpg' },
+				{ src: 'https://sheep0363.github.io/KobeRokkoCss/cover_02h.jpg' }
 			];
 		}
 
