@@ -21,7 +21,7 @@ $('#slider').vegas({
 		transitionDuration: 2000,//切り替わりのアニメーション時間をミリ秒単位で設定
 		firstTransitionDuration: 10,
 		delay: 10000,//スライド間の遅延をミリ秒単位で。
-		animationDuration: 20000,//スライドアニメーション時間をミリ秒単位で設定
+		animationDuration: 10000,//スライドアニメーション時間をミリ秒単位で設定
 		animation: 'kenburns',//スライドアニメーションの種類。http://vegas.jaysalvat.com/documentation/transitions/参照。kenburns、kenburnsUp、kenburnsDown、kenburnsRight、kenburnsLeft、kenburnsUpLeft、kenburnsUpRight、kenburnsDownLeft、kenburnsDownRight、randomが設定可能。
 		slides: responsiveImage//画像設定を読む
 	});
