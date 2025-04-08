@@ -330,6 +330,7 @@ details > div {
 {
     max-height: 250px; 
     overflow-y: scroll;
+    overflow-x: auto;
     scrollbar-width: thin;
     scrollbar-color: #888 #eee;  
 }
