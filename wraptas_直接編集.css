@@ -62,7 +62,7 @@
 
 .page-_top #section-first {
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .page-_top #section-first h1 {
@@ -317,12 +317,23 @@ details > div {
 #block-dd82855a0b6046fea23432afb705d539
 {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 /*概要見出し*/
 #block-cc8231aa97524466aaaaee519e80a7dc{
     display: none;
 }
+
+/*最新情報*/
+#block-1ca09a0463f180fe948ddfab61c75cd9,
+#block-1ca09a0463f18082b901f8950790d3bf
+{
+    max-height: 250px; 
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #eee;  
+}
+
 
 /*経歴名前*/
 #block-22445cab3a474fae95684acf022a87d6{
